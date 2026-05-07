@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid";
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(fontes/BebasNeue-Regular.ttf);
+    font-weight: 400;
+}
+
+:root {
+    --cor0:#84e1ad;
+    --cor1:#195B38;
+    --cor2:rgba(0, 0, 0, 0.459);
+    --cor3:rgb(255, 255, 255);
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif; 
+    --fonte-idroid: 'idroid', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
