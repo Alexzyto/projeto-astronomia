@@ -30,6 +30,11 @@
 body {
     background-color: #0F172A;
     font-family: var(--fonte-padrao);
+    /* 
+    background-image: url(imagens/fundo-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
 }
 
 header {
@@ -39,6 +44,12 @@ header {
     background-image: linear-gradient(to top, #1A2A6C, #1f21b2);
     min-height: 180px;
     text-shadow: 1px 1px 4px black;
+
+    background-image: url(imagens/planeta.jpg);
+    background-position: center center ;
+    background-size: cover;
+    
+
 }
 
 header > h1 {
@@ -153,9 +164,37 @@ iframe {
     height: 90%;
 }
 
+aside {
+    background-color: rgba(62, 137, 199, 0.494);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.404);
+    padding: 10px;
+}
+
+aside > h3 {
+    margin: -10px -10px 0 -10px;
+    background-color: #3e5ac7;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    color: aliceblue;
+}
+
+aside > p {
+    padding: 0px 20px;
+}
+
+aside > ul {
+    padding-left: 50px;
+    list-style-type: "\2714\00a0";
+    list-style-position: inside;
+    columns: 2;
+}
+
 footer {
+    text-align: center;
     color: white;
     background-color: #020617;
+    padding: 10px;
 }
 
 footer a {
