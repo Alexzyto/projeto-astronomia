@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
-    font-family: "idroid";
-    src: url(fontes/idroid.otf) format('opentype');
+    font-family: "race-sport";
+    src: url(fontes/Race\ Sport.ttf) format('opentype');
     font-weight: normal;
 }
 
@@ -12,14 +12,15 @@
 }
 
 :root {
-    --cor0:#84e1ad;
-    --cor1:#195B38;
-    --cor2:rgba(0, 0, 0, 0.459);
-    --cor3:rgb(255, 255, 255);
+    --cor0:#837ae2;
+    --cor1:#4A429E;
+    --cor2:#2F1888;
+    --cor3:#191265;
+    --cor4:#EBEBDF;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: "Bebas Neue", sans-serif; 
-    --fonte-idroid: 'idroid', sans-serif;
+    --fonte-idroid: 'race-sport', sans-serif;
 }
 
 * {
@@ -28,35 +29,24 @@
 }
 
 body {
-    background-color: #0F172A;
+    background-color: var(--cor0);
     font-family: var(--fonte-padrao);
-    /* 
-    background-image: url(imagens/fundo-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    
 }
 
-header {
+header {                                
     padding-top: 40px;
     text-align: center;
-    color: white;
-    background-image: linear-gradient(to top, #1A2A6C, #1f21b2);
+    color: var(--cor4);
+    background-image: linear-gradient(to top, var(--cor2), var(--cor1));
     min-height: 180px;
     text-shadow: 1px 1px 4px black;
-
-    background-image: url(imagens/planeta.jpg);
-    background-position: center center ;
-    background-size: cover;
-    
-
 }
 
 header > h1 {
     font-family: var(--fonte-destaque);
     font-size: 3em;
     margin-bottom: 20px;
-    color: white;
+    color: var(--cor4);
 }
 
 header > p {
@@ -67,18 +57,17 @@ header > p {
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 50px;
-    
 }
 
 nav {
-    background-color: #1A2A6C;
+    background-color: var(--cor2);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.459);;
 }
 
 nav > a {
     text-decoration: none;
-    color: white;
+    color: var(--cor4);
     font-family: var(--fonte-padrao);
     font-weight: bold;
     margin-left: 8px;
@@ -90,12 +79,12 @@ nav > a {
 
 nav > a:hover {
     transform: scale(1.1);
-    background-color: #3e5ac7;
-    color: #0F172A;
+    background-color: var(--cor0);
+    color: var(--cor3);
 }
 
 main {
-    background-color: white;
+    background-color: var(--cor4);
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -103,16 +92,11 @@ main {
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 0px 10px #00000075;
-
-}
-
-main img {
-    width: 100%;
 }
 
 h1, h2 {
     font-family: var(--fonte-idroid);
-    color: #1A2A6C;
+    color: var(--cor3);
     font-weight: lighter;
     font-size: 1.7em;
     margin: 15px 0px;
@@ -121,7 +105,7 @@ h1, h2 {
 main h2 {
     font-size: 1.4em;
     padding: 4px;
-    background-image: linear-gradient(to right, #5473f1a9, transparent);
+    background-image: linear-gradient(to right, #4a429e54, transparent);
 }
 
 main p {
@@ -131,26 +115,30 @@ main p {
     margin: 15px 0px;
 }
 
-a {
+main a {
     padding: 4px 6px;
     text-decoration: none;
-    color: #0F172A;
+    color: var(--cor2);
     font-weight: bolder;
-}
-
-main strong {
-    color: #1f21b2;
-    font-weight: bold;
-    padding: 3px 6px;
 }
 
 main a:hover {
     text-decoration: underline;
 }
 
+main strong {
+    color: var(--cor1);
+    font-weight: bold;
+    padding: 3px 6px;
+}
+
+main img {
+    width: 100%;
+}
+
 .video {
     position: relative;
-    background-color: #3e5ac7;
+    background-color: var(--cor1);
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 50%;
@@ -165,7 +153,7 @@ iframe {
 }
 
 aside {
-    background-color: rgba(62, 137, 199, 0.494);
+    background-color: #4a429e54;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.404);
     padding: 10px;
@@ -173,10 +161,10 @@ aside {
 
 aside > h3 {
     margin: -10px -10px 0 -10px;
-    background-color: #3e5ac7;
+    background-color: #837ae2;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
-    color: aliceblue;
+    color: var(--cor4);
 }
 
 aside > p {
@@ -192,13 +180,18 @@ aside > ul {
 
 footer {
     text-align: center;
-    color: white;
-    background-color: #020617;
+    color: var(--cor4);
+    background-color: var(--cor3);
     padding: 10px;
+    font-size: 0.9em;
 }
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: var(--cor4);
     font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
